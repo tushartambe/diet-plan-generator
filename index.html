@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header id="main_heading" class="main_heading">
+      <h1>Diet Plan Generator</h1>
+    </header>
+    <nav id="nav_menu" class="nav_menu">
+      <a href="#main_heading">Home</a>
+      <a href="#calculateBMI">Calculate BMI</a>
+      <a href="dietInfo.html">Diet Information</a>
+      <a href="#about_us">About Us</a>
+    </nav>
+    <div id="calculateBMI" class="calculateBMI">
+      <table cellspacing="10">
+        <tr>
+          <td class="tableCells">
+            <label for="weight">Your Weight(kg): </label>
+          </td>
+          <td class="tableCells">
+            <input id="weight" type="text" class="userInputs" />
+          </td>
+        </tr>
+        <tr>
+          <td class="tableCells">
+            <label for="height">Your Height(cm): </label>
+          </td>
+          <td class="tableCells">
+            <input id="height" type="text" class="userInputs" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="tableCells" style="text-align: center">
+            <button id="start" class="bmiButtons" onclick="calculateBmi()">
+              Calculate BMI
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="tableCells"><label for="bmi">Your BMI: </label></td>
+          <td class="tableCells"><label id="bmi" for="bmiResult"></label></td>
+        </tr>
+        <tr>
+          <td class="tableCells"><label for="dietPlan">Diet Plan:</label></td>
+          <td class="tableCells"><label id="dietPlan"></label></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="tableCells" style="text-align: center">
+            <button id="reset" class="bmiButtons" onclick="resetValues()">
+              Reset
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer id="about_us" class="aboutUs" style="text-align: center">
+      <div>
+        <span style="font-size: 30px;"><strong> About Us : </strong></span>
+      </div>
+
+      <div>
+        <pre style="font-family: sans-serif; font-size: 18px">
+        This site is developed by Tushar Tambe. 
+        Address : A/p - Varude,
+        Tal - Khed, Dist - Pune, 
+        Maharashtra, 410505.
+        </pre>
+      </div>
+      <h3><u>Connect With Us On</u></h3>
+      <div style="display: flex; justify-content: center">
+        <div class="socialLinks">
+          <a href="https://www.linkedin.com/in/tushar-tambe-3b3b48158/"
+            ><img
+              src="https://raw.githubusercontent.com/tushartambe/imagesForHTML/master/linkedin.png "
+              alt="Facebook"
+              class="symbol_img"
+          /></a>
+        </div>
+        <div class="socialLinks">
+          <a href="https://www.facebook.com/profile.php?id=100009797925213">
+            <img
+              src="https://raw.githubusercontent.com/tushartambe/imagesForHTML/master/facebook.jpg"
+              alt="Facebook"
+              class="symbol_img"
+          /></a>
+        </div>
+
+        <div class="socialLinks">
+          <a href="https://www.instagram.com/tu_sh_ar_7999/?hl=en"
+            ><img
+              src="https://raw.githubusercontent.com/tushartambe/imagesForHTML/master/insta.png"
+              alt="Facebook"
+              class="symbol_img"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
